@@ -3,18 +3,24 @@
 
     <!--IDENTIFICACIÓN DEL PROYECTO-->
     <modelVersion>4.0.0</modelVersion>
-
+    <!--MÓDULO PADRE BASE-->
     <parent>
         <groupId>org.iesps.order-management</groupId>
         <artifactId>order-management</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <packaging>pom</packaging>
+    <!--SUB-MÓDULOS-->
+    <modules>
+        <module>order-domain</module>
+        <module>order-service</module>
+    </modules>
+    <!--SUB-MÓDULOS-->
     <artifactId>core</artifactId>
-    <name>Archetype - core</name>
+    <name>core</name>
     <url>http://maven.apache.org</url>
 
+    <!--DEPENDENCIAS DEL PROYECTO-->
     <dependencies>
         <dependency>
             <groupId>org.iesps.order-management</groupId>
@@ -22,5 +28,9 @@
             <version>${project.version}</version>
         </dependency>
     </dependencies>
+
+    <!--PROPERTIES DEL PROYECTO-->
+
+    <!--PLUGINS DEL PROYECTO-->
 
 </project>

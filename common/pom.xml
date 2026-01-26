@@ -10,10 +10,17 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <packaging>pom</packaging>
+    <!--SUB-MÓDULOS-->
+    <modules>
+        <module>common-api</module>
+        <module>common-utils</module>
+    </modules>
+    <!--SUB-MÓDULOS-->
     <artifactId>common</artifactId>
-    <name>Archetype - common</name>
+    <name>common</name>
     <url>http://maven.apache.org</url>
 
+    <!--DEPENDENCIAS DEL PROYECTO-->
     <dependencies>
         <dependency>
             <groupId>org.iesps.order-management</groupId>
@@ -21,4 +28,11 @@
             <version>${project.version}</version>
         </dependency>
     </dependencies>
+
+    <!--PROPERTIES DEL PROYECTO-->
+
+
+    <!--PLUGINS DEL PROYECTO-->
+
+
 </project>
