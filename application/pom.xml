@@ -19,13 +19,5 @@
     <name>application</name>
     <url>http://maven.apache.org</url>
 
-    <!--DEPENDENCIAS DEL PROYECTO-->
-    <dependencies>
-
-    </dependencies>
-
-    <!--PROPERTIES DEL PROYECTO-->
-
-    <!--PLUGINS DEL PROYECTO-->
 
 </project>

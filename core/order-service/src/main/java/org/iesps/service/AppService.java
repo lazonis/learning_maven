@@ -9,10 +9,10 @@ public class AppService {
 
     public Pelicula alquilarPelicula(String tituloSucio, int dias) {
 
-        // 1. Usamos Utils para limpiar
+        // 1. Usamos Dependencia Utils para formatear
         String formatTitle = AppUtils.formatText(tituloSucio);
 
-        // 2. Usamos Domain para validar
+        // 2. Usamos Dependencia Domain para validar
         if (!validador.hayStock(formatTitle)) {
             System.out.println("Error: No hay stock o título inválido.");
             return null;

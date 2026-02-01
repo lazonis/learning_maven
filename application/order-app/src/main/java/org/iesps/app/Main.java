@@ -7,14 +7,13 @@ import org.iesps.service.AppService;
 
 public class Main {
     public static void main(String[] args) {
-        // Leemos la propiedad del perfil Maven (dev/prod)
-        String test = "SIN_PERFIL";
 
         System.out.println("Iniciando aplicación de pedidos...\n");
 
         AppService servicio = new AppService();
 
-        // Simulamos un pedido
+        // Simulamos un pedido accediendo a service -> que llama a utils para formatear el nombre
+        // -> y a domain para validar el stock
         Pelicula resultado = servicio.alquilarPelicula(" pulp fiction ", 3);
 
         if (resultado != null) {

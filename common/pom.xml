@@ -19,23 +19,4 @@
     <artifactId>common</artifactId>
     <name>common</name>
     <url>http://maven.apache.org</url>
-
-    <!--DEPENDENCIAS DEL PROYECTO-->
-    <dependencies>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.5.0</version>
-            <scope>compile</scope>
-
-        </dependency>
-    </dependencies>
-
-    <!--PROPERTIES DEL PROYECTO-->
-
-
-    <!--PLUGINS DEL PROYECTO-->
-
-
 </project>
