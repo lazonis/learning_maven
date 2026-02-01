@@ -1,4 +1,4 @@
-package org.iesps.order-management;
+package org.iesps.service;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
