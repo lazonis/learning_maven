@@ -5,10 +5,13 @@ import org.iesps.utils.AppUtils;
 import org.iesps.api.Pelicula;
 import org.iesps.service.AppService;
 
+import java.util.ResourceBundle;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Iniciando aplicación de pedidos...\n");
+        System.out.println("-----...Iniciando aplicación de pedidos...----");
+        System.out.println("Perfil activo: " + ResourceBundle.getBundle("app").getString("env"));
 
         AppService servicio = new AppService();
 
