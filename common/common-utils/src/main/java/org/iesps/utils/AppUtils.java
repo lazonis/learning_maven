@@ -7,5 +7,7 @@ public class AppUtils {
         return dias * 3.0; // 3 euros por día
     }
 
-
+    public static String formatText(String texto) {
+        return (texto == null) ? "" : texto.trim().toUpperCase();
+    }
 }
