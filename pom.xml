@@ -20,12 +20,13 @@
 
     <profiles>
         <profile>
-            <id>default</id>
+            <id>dev</id>
             <activation>
+              <!--POR DEFECTO-->
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <nombre>MODO DEV (TESTING MAVEN)</nombre>
+                <env.name>DESARROLLO</env.name>
                 <sufijo>-DEV</sufijo>
             </properties>
             <build>
@@ -36,6 +37,25 @@
                         <configuration>
                             <showWarnings>true</showWarnings>
                             <showDeprecation>true</showDeprecation>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env.name>PRODUCCIÓN</env.name>
+                <sufijo>-REAL</sufijo>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                            <showWarnings>false</showWarnings>
+                            <outputFileName>finalName.jar</outputFileName>
                         </configuration>
                     </plugin>
                 </plugins>
